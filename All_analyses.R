@@ -180,7 +180,7 @@ par(mfrow= c(5,6))
 for (i in c(327:528)){
   hist(ukbbw[,i], xlab = colnames(ukbbw[i]), breaks= 40, main = "", ylab = "")
 }
-###--------------------------Linear models for basic covariates------------------
+###--------------------------Linear models for basic covariates-----------------
 ##linear models for  Brain VOLUME from  DK,FIRST, FAST-------
 bv_ROIs <- data.frame(matrix(ncol = 9, nrow = 0))
 colnames(bv_ROIs) <- c("variable", "estimate", "lci_estimate", "uci_estimate", "stderr_estimate","t","N","pval","group")
